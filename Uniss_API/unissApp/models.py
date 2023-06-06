@@ -77,7 +77,7 @@ class Estudiante (models.Model):
     direccion = models.CharField(max_length=255, verbose_name='Dirección')
     agno_academico = models.CharField(max_length=1, choices=dict_agno)
     
-    clase = models.ManyToManyField(Clase, verbose_name='Clases')
+    clase = models.ManyToManyField(Clase,blank=True, verbose_name='Clases')
 
     class Meta:
         verbose_name= 'Estudiante'

@@ -4,5 +4,6 @@ from unissApp.viewsets import *
 
 router = routers.SimpleRouter()
 router.register('profesor', ProfesorViewSet)
+router.register('estudiante', EstudianteViewSet)
 
 urlpatterns = router.urls
